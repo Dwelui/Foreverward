@@ -4,3 +4,6 @@ services:
         build: .
         volumes:
             - .:/var/www
+        ports:
+            - 8000:8000
+            - 5137:5137

@@ -7,12 +7,12 @@ RUN apt-get update && \
         php-cli \
         php-xml \
         php-mbstring \
+        php-sqlite3 \
         nodejs \
         npm \
         vim
 
 WORKDIR /var/www
-COPY . .
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
