@@ -6,8 +6,10 @@ RUN apt-get update && \
         php \
         php-cli \
         php-xml \
+        php-mbstring \
         nodejs \
-        npm
+        npm \
+        vim
 
 WORKDIR /var/www
 COPY . .
